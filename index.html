@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <div class="navbar">
+            <img src="img/icons8-house-50.png" alt="">
+            <img src="img/icons8-person-50.png" alt="" id="Agents">
+            <div class="row">
+                <div class="triangulo1"></div>
+                <div class="btn-play">
+                    <h3 class="text-white">Jugar</h3>
+                </div>
+                <div class="triangulo2"></div>
+            </div>
+            <img src="img/icons8-backpack-50.png" alt="" id="Weapons">
+            <img src="img/icons8-shopping-cart-50.png" alt="">
+        </div>
+        <div id="AgentDescription">
+            <!--Insertamos con JavaScript la Descripción del personaje-->
+        </div>
+        <div id="carousel" class="container">
+            <div class="gallery">
+                <ul>
+                    <!--Insertamos con JavaScript las Imagenes Aquí-->
+                </ul>
+            </div>
+        </div>
+        <div id="armas" class="hide">
+            <div class="listaArmas">
+                <!--Insertamos con JavaScript las Armas Aquí-->
+            </div>
+        </div>
+    </div>
+    <template class="plantilla">
+        <div id="AgentDescription-BackgroundImage" class="container">
+            <img src="img/AgentDescription-Image-background.png" alt="">
+        </div>
+        <div id="AgentDescription-Image">
+            <img src="img/AgentDescription-Image-fullportrait.png" alt="">
+        </div>
+        <div id="AgentDescription-Body">
+            <div class="primaryRole text-white">INICIADOR</div>
+            <div class="name text-yellow">GEKKO</div>
+            <div class="abilities">
+                <table>
+                    <tr>
+                        <th>INFO</th>
+                        <th>C</th>
+                        <th>Q</th>
+                        <th>E</th>
+                        <th>X</th>
+                    </tr>
+                    <tr>
+                        <td><img src="img/iniciator.png" alt=""></td>
+                        <td><img src="img/abilitie1.png" alt=""></td>
+                        <td><img src="img/abilitie2.png" alt=""></td>
+                        <td><img src="img/abilitie3.png" alt=""></td>
+                        <td><img src="img/ultimate.png" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="description text-yellow w-80">Gekko the Angeleno leads a tight-knit crew of calamitous
+                creatures.
+                His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to
+                regroup and go again.</div>
+            <div class="role text-white bold">INICIADOR</div>
+            <div class="roleDescription text-grey w-80">Initiators challenge angles by setting up their team to enter
+                contested ground and push defenders away.</div>
+        </div>
+    </template>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
