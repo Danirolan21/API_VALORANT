@@ -1,3 +1,4 @@
+const btnHome = document.getElementById('Home');
 const btnAgents = document.getElementById('Agents');
 const btnWeapons = document.getElementById('Weapons');
 const carousel = document.getElementById("carousel");
@@ -5,6 +6,7 @@ const sliderTrack = document.querySelector(".gallery ul");
 const divAgentDescription = document.getElementById("AgentDescription");
 const divArmas = document.getElementById('armas');
 const listaArmas = document.querySelector(".listaArmas");
+const video = document.getElementById('video-background');
 const plantilla = document.querySelector("template.plantilla").content;
 const url = "https://valorant-api.com/v1/agents";
 const urlWeapons = "https://valorant-api.com/v1/weapons";
@@ -44,15 +46,23 @@ function getUuids(Agents) {
     });
     arrayFromSet = Array.from(uuidList);
 }
+btnHome.addEventListener('click', e => {
+    carousel.classList.add("hide");
+    divAgentDescription.classList.add("hide");
+    divArmas.classList.add("hide");
+    video.classList.remove("hide");
+});
 btnWeapons.addEventListener('click', e => {
     carousel.classList.add("hide");
     divAgentDescription.classList.add("hide");
     divArmas.classList.remove("hide");
+    video.classList.add("hide");
 });
 btnAgents.addEventListener('click', e => {
     carousel.classList.remove("hide");
     divAgentDescription.classList.remove("hide");
     divArmas.classList.add("hide");
+    video.classList.add("hide");
 });
 function getAgentsDescription(uuid) {
     divAgentDescription.innerHTML = "";

@@ -11,7 +11,7 @@
 <body>
     <div id="content">
         <div class="navbar">
-            <img src="img/icons8-house-50.png" alt="">
+            <img src="img/icons8-house-50.png" alt="" id="Home">
             <img src="img/icons8-person-50.png" alt="" id="Agents">
             <div class="row">
                 <div class="triangulo1"></div>
@@ -38,6 +38,15 @@
                 <!--Insertamos con JavaScript las Armas Aquí-->
             </div>
         </div>
+
+        <!-- El video de fondo -->
+        <video id="video-background" autoplay muted loop class="hide">
+            <!-- Si el video está alojado en tu servidor -->
+            <source src="videoplayback/videoplayback.mp4" type="video/mp4">
+            <!-- Si el video está en otro servidor -->
+            <!-- <source src="URL_del_video.mp4" type="video/mp4"> -->
+            Tu navegador no admite video HTML5.
+        </video>
     </div>
     <template class="plantilla">
         <div id="AgentDescription-BackgroundImage" class="container">
